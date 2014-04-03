@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA7338B8-6F6D-448C-88F2-EF094C402239}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwainablePlus</RootNamespace>
+    <AssemblyName>TwainablePlus</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>436</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>436</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PaintDotNet.Base, Version=3.511.4977.23436, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\PSFilterPdn\Refrences\PaintDotNet.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Core, Version=3.511.4977.23444, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\PSFilterPdn\Refrences\PaintDotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects, Version=3.511.4977.23447, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\PSFilterPdn\Refrences\PaintDotNet.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigDialog.Designer.cs">
+      <DependentUpon>ConfigDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigToken.cs" />
+    <Compile Include="NativeConstants.cs" />
+    <Compile Include="NativeStructs.cs" />
+    <Compile Include="PaintDotNet\EtchedLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaintDotNet\HeaderLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaintDotNet\UI.cs" />
+    <Compile Include="PaintDotNet\VisualStyleClass.cs" />
+    <Compile Include="PluginSupportInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SafeNativeMethods.cs" />
+    <Compile Include="StreamExtensions.cs" />
+    <Compile Include="TwainablePlus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwainProxy\ProxyDataMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigDialog.resx">
+      <DependentUpon>ConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="icon.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\Program Files\Paint.Net\Effects" /y
+copy "$(TargetDir)$(TargetName).pdb" "C:\Program Files\Paint.Net\Effects" /y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
