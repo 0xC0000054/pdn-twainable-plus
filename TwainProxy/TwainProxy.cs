@@ -721,6 +721,12 @@ namespace TwainProxy
                     }
 
                 }
+
+                if (twEvent.pEvent != IntPtr.Zero)
+                {
+                    Marshal.FreeHGlobal(twEvent.pEvent);
+                    twEvent.pEvent = IntPtr.Zero;
+                }
             }
         }
 
