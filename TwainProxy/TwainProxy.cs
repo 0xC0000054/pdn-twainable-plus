@@ -58,8 +58,8 @@ namespace TwainProxy
         public TwainProxy(ITwainApplication app)
         {
             this.disposed = false;
-            this.state = TwainState.PreSession; 
-            
+            this.state = TwainState.PreSession;
+
             this.availableSources = new List<TwainStructs.Identity>();
             this.defaultSourceIndex = -1;
             this.latestDIB = IntPtr.Zero;
@@ -167,7 +167,7 @@ namespace TwainProxy
 
                 if (rc == ResultCode.Success)
                 {
-                    this.state = TwainState.SourceEnabled;                
+                    this.state = TwainState.SourceEnabled;
                 }
             }
 
@@ -285,7 +285,7 @@ namespace TwainProxy
         }
 
         private IntPtr DoNativeXfer()
-        {                
+        {
             IntPtr hDib = IntPtr.Zero;
 
             if (state == TwainState.TransferReady)
@@ -427,7 +427,7 @@ namespace TwainProxy
             }
 
             return (rc == ResultCode.Success);
-        } 
+        }
 #endif
 
         private unsafe bool SetCapOneValue(ushort capability, DataTypes type, uint value)
@@ -672,7 +672,7 @@ namespace TwainProxy
             }
 
         }
-        
+
         private IntPtr WaitForNativeXfer()
         {
             IntPtr hDib = IntPtr.Zero;
