@@ -11,7 +11,7 @@ using TwainablePlus.Properties;
 
 namespace TwainablePlus
 {
-    public partial class ConfigDialog : EffectConfigDialog
+    internal partial class ConfigDialog : EffectConfigDialog
     {
         private Process process;
         private static readonly uint ProxyDataMessage = SafeNativeMethods.RegisterWindowMessageW("TwainProxyData");
