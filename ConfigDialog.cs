@@ -45,7 +45,7 @@ namespace TwainablePlus
             if (File.Exists(path))
             {
                 string hWnd = this.Handle.ToString();
-                process = Process.Start(path, hWnd); 
+                process = Process.Start(path, hWnd);
             }
             else
             {
@@ -102,7 +102,7 @@ namespace TwainablePlus
             {
                 this.selectSourceCbo.Items.AddRange(sources);
                 this.selectSourceCbo.SelectedIndex = defaultIndex;
-            
+
                 // Disable the source selection combo box unless there is more than one source available.
                 this.selectSourceCbo.Enabled = this.selectSourceCbo.Items.Count > 1;
                 this.acquireBtn.Enabled = true;
@@ -115,7 +115,7 @@ namespace TwainablePlus
         private void ScanCompleted(IntPtr result)
         {
             this.scanRunning = false;
-            
+
             if (result.ToInt32() == 1)
             {
                 base.DialogResult = System.Windows.Forms.DialogResult.OK;
@@ -125,7 +125,7 @@ namespace TwainablePlus
                     base.Close();
                 }
             }
-           
+
         }
 
         private void ScanControlsEnabled(bool enabled)
@@ -144,7 +144,7 @@ namespace TwainablePlus
         {
             if (!scanRunning)
             {
-                this.scanRunning = true;                   
+                this.scanRunning = true;
                 base.Cursor = Cursors.WaitCursor;
 
                 IntPtr source = new IntPtr(selectSourceCbo.SelectedIndex);
