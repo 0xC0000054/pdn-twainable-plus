@@ -576,30 +576,6 @@ namespace TwainProxy
             }
         }
 
-        public static bool IsAvailable
-        {
-            get
-            {
-                if (!string.IsNullOrEmpty(WindowsDirectory))
-                {
-                    string path = Path.Combine(WindowsDirectory, TwainDllName);
-
-                    if (File.Exists(path))
-                    {
-                        using (SafeLibraryHandle hMod = UnsafeNativeMethods.LoadLibraryW(path))
-                        {
-                            if (UnsafeNativeMethods.GetProcAddress(hMod, TwainEntryPoint) != IntPtr.Zero)
-                            {
-                                return true;
-                            }
-                        }
-                    }
-                }
-
-                return false;
-            }
-        }
-
         public bool AcquireToClipboard(IntPtr clipOwnerHWnd)
         {
             bool result = false;
