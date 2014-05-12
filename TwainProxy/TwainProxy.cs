@@ -238,6 +238,7 @@ namespace TwainProxy
                 case TwainMessages.CloseDSReq:
                     this.latestDIB = IntPtr.Zero;
                     DisableSource();
+                    this.breakModalLoop = true;
                     break;
                 default:
                     break;
