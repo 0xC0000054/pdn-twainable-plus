@@ -115,6 +115,7 @@ namespace TwainablePlus
         private void ScanCompleted(IntPtr result)
         {
             this.scanRunning = false;
+            this.Cursor = Cursors.Default;
 
             if (result.ToInt32() == 1)
             {
