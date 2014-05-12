@@ -52,11 +52,5 @@ namespace TwainProxy
 
         [DllImport("user32.dll", EntryPoint = "DispatchMessageW")]
         internal static extern IntPtr DispatchMessage([In()] ref NativeStructs.tagMSG lpMsg);
-
-        [DllImport("user32.dll", ExactSpelling = true)]
-        internal static extern uint GetMessagePos();
-        
-        [DllImport("user32.dll", ExactSpelling = true)]
-        internal static extern int GetMessageTime();
     }
 }
