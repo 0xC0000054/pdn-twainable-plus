@@ -43,7 +43,7 @@ namespace TwainProxy
 
         private static string GetWindowsDirectory()
         {
-            StringBuilder builder = new StringBuilder(260);
+            StringBuilder builder = new StringBuilder(NativeConstants.MAX_PATH);
 
             int result = UnsafeNativeMethods.SHGetFolderPathW(IntPtr.Zero, NativeConstants.CSIDL_WINDOWS, IntPtr.Zero, 0, builder);
 
