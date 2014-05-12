@@ -236,6 +236,7 @@ namespace TwainProxy
                     this.latestDIB = DoOneTransfer();
                     break;
                 case TwainMessages.CloseDSReq:
+                    this.latestDIB = IntPtr.Zero;
                     DisableSource();
                     break;
                 default:
@@ -661,6 +662,7 @@ namespace TwainProxy
             {
                 if (SafeNativeMethods.GetMessage(out msg, IntPtr.Zero, 0, 0) == 0)
                 {
+                    this.latestDIB = IntPtr.Zero;
                     break; // WM_QUIT
                 }
 
