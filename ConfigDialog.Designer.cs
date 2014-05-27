@@ -40,6 +40,7 @@
             this.acquireBtn = new System.Windows.Forms.Button();
             this.autoCloseCb = new System.Windows.Forms.CheckBox();
             this.closeBtn = new System.Windows.Forms.Button();
+            this.donateLabel = new System.Windows.Forms.LinkLabel();
             this.selectSourceLabel = new PaintDotNet.HeaderLabel();
             this.SuspendLayout();
             // 
@@ -77,13 +78,25 @@
             // 
             // closeBtn
             // 
-            this.closeBtn.Location = new System.Drawing.Point(195, 218);
+            this.closeBtn.Location = new System.Drawing.Point(195, 171);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(75, 23);
             this.closeBtn.TabIndex = 6;
             this.closeBtn.Text = "&Close";
             this.closeBtn.UseVisualStyleBackColor = true;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
+            // donateLabel
+            // 
+            this.donateLabel.AutoSize = true;
+            this.donateLabel.Location = new System.Drawing.Point(12, 176);
+            this.donateLabel.Name = "donateLabel";
+            this.donateLabel.Size = new System.Drawing.Size(44, 17);
+            this.donateLabel.TabIndex = 7;
+            this.donateLabel.TabStop = true;
+            this.donateLabel.Text = "Donate!";
+            this.donateLabel.UseCompatibleTextRendering = true;
+            this.donateLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.donateLabel_LinkClicked);
             // 
             // selectSourceLabel
             // 
@@ -99,7 +112,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(282, 206);
+            this.Controls.Add(this.donateLabel);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.autoCloseCb);
             this.Controls.Add(this.acquireBtn);
@@ -113,6 +127,7 @@
             this.Controls.SetChildIndex(this.acquireBtn, 0);
             this.Controls.SetChildIndex(this.autoCloseCb, 0);
             this.Controls.SetChildIndex(this.closeBtn, 0);
+            this.Controls.SetChildIndex(this.donateLabel, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +140,6 @@
         private System.Windows.Forms.Button acquireBtn;
         private System.Windows.Forms.CheckBox autoCloseCb;
         private System.Windows.Forms.Button closeBtn;
+        private System.Windows.Forms.LinkLabel donateLabel;
     }
 }

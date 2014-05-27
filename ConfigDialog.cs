@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using PaintDotNet.AppModel;
 using PaintDotNet.Effects;
 using System.Collections.Generic;
 using System.IO.Pipes;
@@ -188,5 +189,9 @@ namespace TwainablePlus
             base.WndProc(ref m);
         }
 
+        private void donateLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            base.Services.GetService<IShellService>().LaunchUrl(this, "http://forums.getpaint.net/index.php?showtopic=28153");
+        }
     }
 }
