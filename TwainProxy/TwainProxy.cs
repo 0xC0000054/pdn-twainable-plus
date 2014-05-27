@@ -269,7 +269,7 @@ namespace TwainProxy
 
                 if (rc == ResultCode.Success)
                 {
-                    if (pending.Count > 0)
+                    if (pending.Count != 0)
                     {
                         this.state = TwainState.TransferReady;
                     }
