@@ -117,7 +117,7 @@ namespace TwainablePlus
             this.scanRunning = false;
             this.Cursor = Cursors.Default;
 
-            if (result.ToInt32() == 1)
+            if (result != IntPtr.Zero)
             {
                 base.DialogResult = System.Windows.Forms.DialogResult.OK;
 
