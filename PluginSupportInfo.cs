@@ -27,7 +27,7 @@ namespace TwainablePlus
         {
             get 
             { 
-                return TwainablePlus.StaticName; 
+                return TwainablePlusEffect.StaticName; 
             }
         }
 

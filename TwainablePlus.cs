@@ -3,7 +3,7 @@
 namespace TwainablePlus
 {
     [PaintDotNet.PluginSupportInfo(typeof(PluginSupportInfo))]
-    public sealed class TwainablePlus : Effect
+    public sealed class TwainablePlusEffect : Effect
     {
         internal static string StaticName
         {
@@ -17,11 +17,11 @@ namespace TwainablePlus
         {
             get
             {
-                return new System.Drawing.Bitmap(typeof(TwainablePlus), "icon.png");
+                return new System.Drawing.Bitmap(typeof(TwainablePlusEffect), "icon.png");
             }
         }
 
-        public TwainablePlus() : base(TwainablePlus.StaticName, TwainablePlus.StaticIcon, "Tools", EffectFlags.Configurable)
+        public TwainablePlusEffect() : base(TwainablePlusEffect.StaticName, TwainablePlusEffect.StaticIcon, "Tools", EffectFlags.Configurable)
         {
 
         }
