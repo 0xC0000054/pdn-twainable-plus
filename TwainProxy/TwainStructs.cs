@@ -54,7 +54,7 @@ namespace TwainProxy
             public short[] BitsPerSample;
             public short BitsPerPixel;
             public ushort Planar;
-            public short PixelType;
+            public PixelType PixelType;
             public ushort Compression;
         }
 
