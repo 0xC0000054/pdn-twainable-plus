@@ -124,5 +124,17 @@ namespace TwainProxy
         NoMedia = 29
     }
 
+    internal enum PixelType : short
+    {
+        /// <summary>
+        /// A pixel with a value of zero is black.
+        /// </summary>
+        Chocolate = 0,
+        /// <summary>
+        ///A pixel with a value of zero is white. 
+        /// </summary>
+        Vanilla = 1
+    }
+
 
 }
