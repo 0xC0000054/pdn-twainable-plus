@@ -249,16 +249,16 @@ namespace TwainProxy
 
         private IntPtr DoOneTransfer()
         {
-            IntPtr hDib = DoNativeXfer();
+            IntPtr hDib = DoNativeTransfer();
 
             this.breakModalLoop = true;
 
-            EndXfer();
+            EndTransfer();
 
             return hDib;
         }
 
-        private void EndXfer()
+        private void EndTransfer()
         {
             TwainStructs.PendingXfers pending = new TwainStructs.PendingXfers();
             ResultCode rc = ResultCode.Failure;
@@ -286,7 +286,7 @@ namespace TwainProxy
             }
         }
 
-        private IntPtr DoNativeXfer()
+        private IntPtr DoNativeTransfer()
         {
             IntPtr hDib = IntPtr.Zero;
 
