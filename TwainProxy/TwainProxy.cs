@@ -601,7 +601,7 @@ namespace TwainProxy
                         this.hostApp.BringToForeground();
                         if (EnableSource())
                         {
-                            IntPtr hDib = WaitForNativeXfer();
+                            IntPtr hDib = WaitForNativeTransfer();
 
                             if (hDib != IntPtr.Zero)
                             {
@@ -662,7 +662,7 @@ namespace TwainProxy
 
         }
 
-        private IntPtr WaitForNativeXfer()
+        private IntPtr WaitForNativeTransfer()
         {
             IntPtr hDib = IntPtr.Zero;
 
