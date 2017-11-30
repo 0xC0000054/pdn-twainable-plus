@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Text;
 using System.IO;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 namespace TwainProxy

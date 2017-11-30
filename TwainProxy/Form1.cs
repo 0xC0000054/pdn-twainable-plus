@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO.Pipes;
 using System.Text;
 using System.Windows.Forms;
 using System.Globalization;
-using System.Security.AccessControl;
 using System.Runtime.InteropServices;
 
 namespace TwainProxy

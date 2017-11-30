@@ -4,9 +4,6 @@ using System.IO;
 using System.Windows.Forms;
 using PaintDotNet.AppModel;
 using PaintDotNet.Effects;
-using System.Collections.Generic;
-using System.IO.Pipes;
-using System.Text;
 using System.Runtime.InteropServices;
 using TwainablePlus.Properties;
 
