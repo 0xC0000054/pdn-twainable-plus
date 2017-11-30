@@ -8,9 +8,9 @@ namespace TwainablePlus
         [StructLayout(LayoutKind.Sequential)]
         internal struct COPYDATASTRUCT
         {
-            public IntPtr dwData;       // Specifies data to be passed 
-            public int cbData;          // Specifies the data size in bytes 
-            public IntPtr lpData;       // Pointer to data to be passed 
-        } 
+            public IntPtr dwData;       // Specifies data to be passed
+            public int cbData;          // Specifies the data size in bytes
+            public IntPtr lpData;       // Pointer to data to be passed
+        }
     }
 }

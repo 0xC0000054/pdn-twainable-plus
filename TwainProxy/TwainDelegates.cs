@@ -8,13 +8,13 @@ namespace TwainProxy
     {
         [UnmanagedFunctionPointer(CallingConvention.StdCall), SuppressUnmanagedCodeSecurity]
         internal delegate ResultCode TwainEvent(ref TwainStructs.Identity appId, ref TwainStructs.Identity deviceId, DataGroup group, ushort argType, ushort msg, ref TwainStructs.Event item);
-                
+
         [UnmanagedFunctionPointer(CallingConvention.StdCall), SuppressUnmanagedCodeSecurity]
         internal delegate ResultCode TwianParent(ref TwainStructs.Identity appId, IntPtr deviceId, DataGroup group, ushort argType, ushort msg, ref IntPtr parentHWnd);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall), SuppressUnmanagedCodeSecurity]
         internal delegate ResultCode TwainIdentity(ref TwainStructs.Identity appId, IntPtr deviceId, DataGroup group, ushort argType, ushort msg, ref TwainStructs.Identity currentDevice);
-               
+
         [UnmanagedFunctionPointer(CallingConvention.StdCall), SuppressUnmanagedCodeSecurity]
         internal delegate ResultCode TwainUI(ref TwainStructs.Identity appId, ref TwainStructs.Identity deviceId, DataGroup group, ushort argType, ushort msg, ref TwainStructs.UserInterface item);
 

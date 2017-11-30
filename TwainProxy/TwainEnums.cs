@@ -14,7 +14,7 @@ namespace TwainProxy
     }
 
     internal enum ImageMesurementUnits : int
-    { 
+    {
         Inches = 0,
         Centimeters = 1,
         Picas = 2,
@@ -68,7 +68,7 @@ namespace TwainProxy
     }
 
     internal enum ResultCode
-    { 
+    {
         Success = 0,
         Failure,
         CheckStatus,
@@ -84,7 +84,7 @@ namespace TwainProxy
     }
 
     internal enum TransferMech : ushort
-    { 
+    {
         Native = 0,
         File = 1,
         Memory = 2
@@ -131,7 +131,7 @@ namespace TwainProxy
         /// </summary>
         Chocolate = 0,
         /// <summary>
-        ///A pixel with a value of zero is white. 
+        ///A pixel with a value of zero is white.
         /// </summary>
         Vanilla = 1
     }

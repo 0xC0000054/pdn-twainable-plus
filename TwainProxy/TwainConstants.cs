@@ -64,7 +64,7 @@ namespace TwainProxy
         public const ushort Null = 0;
         public const ushort CustomBase = 32768;
 
-        // Generic messages may be used with any of several DATs. 
+        // Generic messages may be used with any of several DATs.
         public const ushort Get = 1;
         public const ushort GetCurrent = 2;
         public const ushort GetDefault = 3;
@@ -84,7 +84,7 @@ namespace TwainProxy
         public const ushort CloseDSOk = 259;
         public const ushort DeviceEvent = 260;
 
-        // Messages used with a pointer to DAT_PARENT data 
+        // Messages used with a pointer to DAT_PARENT data
         public const ushort OpenDSM = 769;
         public const ushort CloseDSM = 770;
 
@@ -117,11 +117,11 @@ namespace TwainProxy
         public const ushort Rename = 2057;
         public const ushort Copy = 2058;
         public const ushort AutomaticCaptureDirectory = 2059;
-        
+
         // Messages used with a pointer to a DAT_PASSTHRU structure
         public const ushort PassThru = 2305;
 
-        // used with DAT_CALLBACK 
+        // used with DAT_CALLBACK
         public const ushort RegisterCallback = 2306;
 
         // used with DAT_CAPABILITY

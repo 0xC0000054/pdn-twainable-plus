@@ -20,7 +20,7 @@ namespace TwainProxy
         private readonly IntPtr ClientHWnd;
 
         public Form1(string[] args)
-        {            
+        {
             ClientHWnd = new IntPtr(long.Parse(args[0], CultureInfo.InvariantCulture));
 
             InitializeComponent();
@@ -153,8 +153,8 @@ namespace TwainProxy
                     int selectedSource = m.LParam.ToInt32();
                     ScanToClipboard(selectedSource);
                 }
-            }            
-            
+            }
+
             base.WndProc(ref m);
         }
 

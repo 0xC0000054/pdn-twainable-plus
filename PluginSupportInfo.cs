@@ -9,31 +9,31 @@ namespace TwainablePlus
     {
         public string Author
         {
-            get 
-            { 
+            get
+            {
                 return "null54";
             }
         }
 
         public string Copyright
         {
-            get 
+            get
             {
-                return ((AssemblyCopyrightAttribute)typeof(PluginSupportInfo).Assembly.GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false)[0]).Copyright; 
+                return ((AssemblyCopyrightAttribute)typeof(PluginSupportInfo).Assembly.GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false)[0]).Copyright;
             }
         }
 
         public string DisplayName
         {
-            get 
-            { 
-                return TwainablePlusEffect.StaticName; 
+            get
+            {
+                return TwainablePlusEffect.StaticName;
             }
         }
 
         public Version Version
         {
-            get 
+            get
             {
                 return typeof(PluginSupportInfo).Assembly.GetName().Version;
             }
@@ -41,7 +41,7 @@ namespace TwainablePlus
 
         public Uri WebsiteUri
         {
-            get 
+            get
             {
                 return new Uri("http://www.getpaint.net/redirect/plugins.html");
             }

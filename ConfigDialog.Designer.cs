@@ -43,9 +43,9 @@
             this.donateLabel = new System.Windows.Forms.LinkLabel();
             this.selectSourceLabel = new PaintDotNet.HeaderLabel();
             this.SuspendLayout();
-            // 
+            //
             // selectSourceCbo
-            // 
+            //
             this.selectSourceCbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectSourceCbo.Enabled = false;
             this.selectSourceCbo.FormattingEnabled = true;
@@ -53,9 +53,9 @@
             this.selectSourceCbo.Name = "selectSourceCbo";
             this.selectSourceCbo.Size = new System.Drawing.Size(176, 21);
             this.selectSourceCbo.TabIndex = 1;
-            // 
+            //
             // acquireBtn
-            // 
+            //
             this.acquireBtn.Enabled = false;
             this.acquireBtn.Location = new System.Drawing.Point(12, 77);
             this.acquireBtn.Name = "acquireBtn";
@@ -64,9 +64,9 @@
             this.acquireBtn.Text = "&Acquire to Clipboard...";
             this.acquireBtn.UseVisualStyleBackColor = true;
             this.acquireBtn.Click += new System.EventHandler(this.acquireBtn_Click);
-            // 
+            //
             // autoCloseCb
-            // 
+            //
             this.autoCloseCb.AutoSize = true;
             this.autoCloseCb.Enabled = false;
             this.autoCloseCb.Location = new System.Drawing.Point(12, 106);
@@ -75,9 +75,9 @@
             this.autoCloseCb.TabIndex = 4;
             this.autoCloseCb.Text = "Close &window automatically";
             this.autoCloseCb.UseVisualStyleBackColor = true;
-            // 
+            //
             // closeBtn
-            // 
+            //
             this.closeBtn.Location = new System.Drawing.Point(195, 171);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(75, 23);
@@ -85,9 +85,9 @@
             this.closeBtn.Text = "&Close";
             this.closeBtn.UseVisualStyleBackColor = true;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
+            //
             // donateLabel
-            // 
+            //
             this.donateLabel.AutoSize = true;
             this.donateLabel.Location = new System.Drawing.Point(12, 176);
             this.donateLabel.Name = "donateLabel";
@@ -97,9 +97,9 @@
             this.donateLabel.Text = "Donate!";
             this.donateLabel.UseCompatibleTextRendering = true;
             this.donateLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.donateLabel_LinkClicked);
-            // 
+            //
             // selectSourceLabel
-            // 
+            //
             this.selectSourceLabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.selectSourceLabel.Location = new System.Drawing.Point(12, 12);
             this.selectSourceLabel.Name = "selectSourceLabel";
@@ -107,9 +107,9 @@
             this.selectSourceLabel.TabIndex = 2;
             this.selectSourceLabel.TabStop = false;
             this.selectSourceLabel.Text = "Select source";
-            // 
+            //
             // ConfigDialog
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 206);
