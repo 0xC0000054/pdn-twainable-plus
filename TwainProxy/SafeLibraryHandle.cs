@@ -1,4 +1,16 @@
-﻿using System.Security.Permissions;
+﻿////////////////////////////////////////////////////////////////////////
+//
+// This file is part of pdn-twainable-plus, an Effect plugin for
+// Paint.NET that imports images from TWAIN devices.
+//
+// Copyright (c) 2014, 2017 Nicholas Hayes
+//
+// This file is licensed under the MIT License.
+// See LICENSE.txt for complete licensing and attribution information.
+//
+////////////////////////////////////////////////////////////////////////
+
+using System.Security.Permissions;
 using Microsoft.Win32.SafeHandles;
 
 /* The following code is quoted from Mike Stall's blog
