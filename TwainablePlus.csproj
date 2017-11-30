@@ -34,14 +34,14 @@
     <NoWarn>436</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PaintDotNet.Base, Version=3.511.4977.23436, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\PSFilterPdn\Refrences\PaintDotNet.Base.dll</HintPath>
+    <Reference Include="PaintDotNet.Base">
+      <HintPath>..\PSFilterPdn\References\PaintDotNet.Base.dll</HintPath>
     </Reference>
-    <Reference Include="PaintDotNet.Core, Version=3.511.4977.23444, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\PSFilterPdn\Refrences\PaintDotNet.Core.dll</HintPath>
+    <Reference Include="PaintDotNet.Core">
+      <HintPath>..\PSFilterPdn\References\PaintDotNet.Core.dll</HintPath>
     </Reference>
-    <Reference Include="PaintDotNet.Effects, Version=3.511.4977.23447, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\PSFilterPdn\Refrences\PaintDotNet.Effects.dll</HintPath>
+    <Reference Include="PaintDotNet.Effects">
+      <HintPath>..\PSFilterPdn\References\PaintDotNet.Effects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -93,8 +93,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "C:\Program Files\Paint.Net\Effects" /y
-copy "$(TargetDir)$(TargetName).pdb" "C:\Program Files\Paint.Net\Effects" /y</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "D:\Program Files\Paint.Net\Effects" /y
+copy "$(TargetDir)$(TargetName).pdb" "D:\Program Files\Paint.Net\Effects" /y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
