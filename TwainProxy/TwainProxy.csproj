@@ -88,8 +88,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "C:\Program Files\Paint.Net\Effects" /y
-copy "$(TargetDir)$(TargetName).pdb" "C:\Program Files\Paint.Net\Effects" /y</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "D:\Program Files\Paint.Net\Effects" /y
+copy "$(TargetDir)$(TargetName).pdb" "D:\Program Files\Paint.Net\Effects" /y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
