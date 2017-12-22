@@ -47,9 +47,24 @@ namespace TwainablePlus
         {
         }
 
+        protected override void OnBackColorChanged(EventArgs e)
+        {
+            base.OnBackColorChanged(e);
+
+            PluginThemingUtil.UpdateControlBackColor(this);
+        }
+
+        protected override void OnForeColorChanged(EventArgs e)
+        {
+            base.OnForeColorChanged(e);
+
+            PluginThemingUtil.UpdateControlForeColor(this);
+        }
+
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+            PluginThemingUtil.EnableEffectDialogTheme(this);
 
             string path = Path.Combine(Path.GetDirectoryName(typeof(ConfigDialog).Assembly.Location), "TwainProxy.exe");
             if (File.Exists(path))

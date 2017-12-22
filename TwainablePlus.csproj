@@ -68,6 +68,7 @@
     <Compile Include="PaintDotNet\UI.cs" />
     <Compile Include="PaintDotNet\VisualStyleClass.cs" />
     <Compile Include="PluginSupportInfo.cs" />
+    <Compile Include="PluginThemingUtil.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
