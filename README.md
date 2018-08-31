@@ -10,7 +10,7 @@ A [Paint.NET](http://www.getpaint.net) Effect plugin that allows 32-bit TWAIN dr
   Paint.NET Version |  Effects Folder Location
   --------|----------
   Classic | C:\Program Files\Paint.NET\Effects    
-  Microsoft Store | My Documents\paint.net App Files\Effects
+  Microsoft Store | Documents\paint.net App Files\Effects
 
 3. Restart Paint.NET.
 
